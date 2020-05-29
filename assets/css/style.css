@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gray: rgb(182,195,212);
+    --lightblue: rgb(90,149,196);
+    --darkblue: rgb(18,71,115)
+}
+body {
+    font-family: Helvetica, Arial,  sans-serif;
+    background-color: var(--gray);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--lightblue);
+    
+}
