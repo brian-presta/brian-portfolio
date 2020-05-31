@@ -48,7 +48,7 @@ header nav ul {
     align-items: center;
     list-style: none;
 }
-header nav ul li a {
+header nav a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 32px;
@@ -257,12 +257,21 @@ padding-bottom: 50px;
 
 /* mobile screen reformatting */
 @media screen and (max-width: 575px){
+    /* header reformatting */
+    header h1{
+        width: 100%;
+    }
+    header nav {
+        margin-left: 5px;
+    }
+    header nav a {
+        font-size: 22px;
+        padding: 10px;
+    }
     /* my work grid reformatting */
-
     .grid-wrapper{
         width: 95%;
     }
-
     .grid-container{
         grid-template-rows: (6,1fr);
         grid-template-columns: 1fr 1fr;
@@ -278,12 +287,10 @@ padding-bottom: 50px;
         text-align: center;
         line-height: 1.1;
     }
-  
     .work-1{
         grid-row: span 2;
         background-position: center;
     }
-
     /* contact reformatting */
     .contact div{
         flex-direction: column;
@@ -292,6 +299,5 @@ padding-bottom: 50px;
     .contact div a {
         margin-top: 10px;
     }
-
 }
 
