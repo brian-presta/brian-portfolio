@@ -113,7 +113,6 @@ main section h2 span{
     text-decoration: none;
     color: var(--darkblue);
 }
-
 .grid-wrapper {
 display: flex;
 width: 70%;
@@ -149,13 +148,13 @@ padding-bottom: 50px;
     width: 60%;
     line-height: 1.5;
 }
-.grid-item:first-child{
+.work-1{
     grid-row: span 2;
     grid-column: span 2;
     background-image: url("../images/run-buddy.png");
     background-size: cover;
 }
-.grid-item:first-child div {
+.work-1 div {
     width: 30%;
 }
 /* end my work styling */
@@ -220,23 +219,19 @@ padding-bottom: 50px;
         grid-template-columns: 1fr 1fr;
         grid-gap: 5px;
         width: 100%;
-        margin: 0;
     }
     .grid-item:hover{
         transform: none;
     }
     .grid-item div {
         margin-bottom: 20px;
-        padding: 10px 0 10px 10px;
-        background-color: rgba(90,149,196,.5);
+        padding: 5px ;
+        background-color: rgba(90,149,196,.75);
         width: 60%;
-        line-height: 1.5;
     }
-    .grid-item:first-child{
+    .work-1{
         grid-row: span 2;
         grid-column: span 2;
-        background-image: url("../images/run-buddy.png");
-        background-size: cover;
     }
     /* contact reformatting */
     .contact div {
@@ -249,6 +244,32 @@ padding-bottom: 50px;
 
 /* mobile screen reformatting */
 @media screen and (max-width: 575px){
+    /* my work grid reformatting */
+
+    .grid-wrapper{
+        width: 95%;
+    }
+
+    .grid-container{
+        grid-template-rows: (6,1fr);
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-item{
+        line-height: 1;
+    }
+    .grid-item div {
+        padding: 5px ;
+        margin: 10px 0 0;
+        width: 100%;
+        font-size: 1.8vh;
+        text-align: center;
+        line-height: 1.1;
+    }
+  
+    .work-1{
+        grid-row: span 2;
+        background-position: center;
+    }
 
     /* contact reformatting */
     .contact div{
