@@ -94,6 +94,9 @@ main section h2 {
     margin-right: 25px;
     justify-self: flex-start;
 }
+main section h2 span{
+    display: block;
+}
 /* end main section styling */
 
 /* about me styling*/
@@ -135,6 +138,10 @@ padding-bottom: 50px;
     align-items: flex-end;
     margin-right: 15vh;
     margin-bottom: 10vh;
+    transition: transform .5s;
+}
+.grid-item:hover{
+    transform: scale(1.1,1.1);
 }
 .grid-item div {
     margin-bottom: 20px;
@@ -179,25 +186,33 @@ padding-bottom: 50px;
 
 /* media queries */
 @media screen and (max-width: 980px){
+    /* main reformatting */
     main section {
         justify-content: center;
-        margin: 0;
+        margin: 15px 0;
     }
     main section h2 {
         color: var(--darkblue);
         font-size: 50px;
         text-align: center;
-        width: 100%;
+        width: 50%;
         padding-top: 10px;
-        padding-right: 10px;
-        padding-bottom: 0;
+        padding-right: 0;
+        padding-bottom: 5px;
         border-right: none;
+        border-bottom: solid 3px var(--darkblue);
+        margin-bottom: 10px;
         margin-right: 0;
         justify-self: center;
     }
+    main section h2 span{
+        display: inline;
+    }
+    /* about reformatting */
     .about div {
         width: 85%;
     }
+    /* work reformatting */
     .grid-container {
         display: grid;
         grid-template-rows: repeat(4,1fr);
@@ -210,6 +225,9 @@ padding-bottom: 50px;
         align-items: flex-end;
         margin-right: 15vh;
         margin-bottom: 10vh;
+    }
+    .grid-item:hover{
+        transform: none;
     }
     .grid-item div {
         margin-bottom: 20px;
@@ -224,13 +242,14 @@ padding-bottom: 50px;
         background-image: url("../images/run-buddy.png");
         background-size: cover;
     }
+    /* contact reformatting */
     .contact div {
         width: 100%;
-        margin: 0;
+        margin: 15px 0;
         justify-content: space-around;
     }
-
 }
+/* end 980 width media query */
 
 
 
