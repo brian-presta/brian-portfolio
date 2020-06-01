@@ -102,9 +102,12 @@ main section h2 span{
 /* about me styling*/
 .about div {
     line-height: 1.5;
-    width: 65%;
+    width: 25%;
     font-size: 18px;
     color: var(--darkblue);
+}
+.about img {
+    width: 35%;
 }
 /* end about me styling */
 
@@ -277,6 +280,11 @@ padding-bottom: 50px;
     /* hero reformatting */
     .hero{
         height: 200px;
+    }
+    /* about me reformatting */
+    .about img {
+        width: 60%;
+        margin-top: 10px;
     }
     /* my work grid reformatting */
     .grid-wrapper{
