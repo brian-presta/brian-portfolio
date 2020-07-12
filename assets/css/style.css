@@ -154,7 +154,7 @@ padding-bottom: 50px;
 .work-1{
     grid-row: span 2;
     grid-column: span 2;
-    background-image: url("../images/run-buddy.png");
+    background-image: url("../images/safeTravels.PNG");
     background-size: cover;
 }
 .work-1 div {
@@ -164,7 +164,7 @@ padding-bottom: 50px;
     background-image: url("../images/horiseon.PNG");
 }
 .work-3 {
-    background-image: url("../images/dog.jpg");
+    background-image: url("../images/run-buddy.png");
 }
 .work-4 {
     background-image: url("../images/parrot.jpg");
