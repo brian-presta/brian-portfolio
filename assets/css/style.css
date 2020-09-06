@@ -154,14 +154,14 @@ padding-bottom: 50px;
 .work-1{
     grid-row: span 2;
     grid-column: span 2;
-    background-image: url("../images/safeTravels.PNG");
+    background-image: url("../images/movie-finder.PNG");
     background-size: cover;
 }
 .work-1 div {
     width: 30%;
 }
 .work-2 {
-    background-image: url("../images/horiseon.PNG");
+    background-image: url("../images/safeTravels.PNG");
 }
 .work-3 {
     background-image: url("../images/run-buddy.png");
@@ -172,7 +172,7 @@ padding-bottom: 50px;
     background-position: center;
 }
 .work-5 {
-    background-image: url("../images/beach.jpg");
+    background-image: url("../images/horieson.jpg");
 }
 /* end my work styling */
 
